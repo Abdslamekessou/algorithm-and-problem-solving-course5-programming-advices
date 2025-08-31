@@ -1,6 +1,4 @@
 #include <iostream>
-#include <string>
-#include <math.h>
 
 // 🚀 Problem: Write a program to reverse the digits of a given positive number.
 // ✅ Example: Input = 1234 → Output = 4321
