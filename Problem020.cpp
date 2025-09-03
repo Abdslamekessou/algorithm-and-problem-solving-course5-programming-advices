@@ -18,22 +18,24 @@ int  RandomNumber(int From , int To){
 }
 
 
-void  PrintRandomCharacter(enCharacterType charType){
-    cout << "\n";
+char  GetRandomCharacter(enCharacterType charType){
+    
     switch(charType){
         case enCharacterType::smallLetter :
-            cout << char(RandomNumber(97 , 122));
+            return char(RandomNumber(97 , 122));
             break;
         case enCharacterType::capitalLetter :
-            cout << char(RandomNumber(65 , 90));
+            return char(RandomNumber(65 , 90));
             break;
         case enCharacterType::specialChar :
-            cout << char(RandomNumber(33 , 47));
+            return char(RandomNumber(33 , 47));
             break;
         case enCharacterType::Digit :
-            cout << char(RandomNumber(48 , 57));
+            return char(RandomNumber(48 , 57));
             break;
     }
+
+    return '\0';
 }
 
 
@@ -42,10 +44,10 @@ int main()
 {
     srand((unsigned)time(NULL));
 
-    PrintRandomCharacter(enCharacterType::smallLetter);
-    PrintRandomCharacter(enCharacterType::capitalLetter);
-    PrintRandomCharacter(enCharacterType::specialChar);
-    PrintRandomCharacter(enCharacterType::Digit);
+    cout << GetRandomCharacter(enCharacterType::smallLetter) <<endl;
+    cout << GetRandomCharacter(enCharacterType::capitalLetter)<<endl;
+    cout << GetRandomCharacter(enCharacterType::specialChar) <<endl;
+    cout << GetRandomCharacter(enCharacterType::Digit) <<endl;
 
     return 0;
 }
