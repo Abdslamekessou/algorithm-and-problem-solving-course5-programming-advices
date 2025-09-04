@@ -64,7 +64,7 @@ int main(){
     cout << "\nArray Elements : ";
     PrintArray(arr , arrSize);
 
-    cout << "\n\nSum Numbers Of All Numbers Is : " << SumArray(arr , arrSize);
+    cout << "\n\nSum  Of All Numbers Is : " << SumArray(arr , arrSize);
     
     return 0;
 }
