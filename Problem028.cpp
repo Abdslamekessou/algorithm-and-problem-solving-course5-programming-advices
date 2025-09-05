@@ -65,7 +65,7 @@ int main(){
     PrintArray(arr , arrSize);
 
     cout << "\n\nArray 2  Elements After Copy : \n";
-    PrintArray(arr , arrSize);
+    PrintArray(arr2 , arrSize);
     
     return 0;
 }
